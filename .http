@@ -1,0 +1,15 @@
+GET http://localhost:3000/
+###
+GET http://localhost:3000/error
+###
+GET http://localhost:3000/notfound
+###
+GET http://localhost:3000/person?name=John&age=25
+###
+PATCH  http://localhost:3000/person
+Content-Type: application/json
+
+{
+  "name": "John",
+  "age": 25
+}
